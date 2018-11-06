@@ -31,6 +31,10 @@
 *.out
 *.app
 
-#Compile Directories
-bin/*
-bin-int/*
+#Visual Studio files
+*.user
+
+#Directories
+.vs/
+bin/
+bin-int/
