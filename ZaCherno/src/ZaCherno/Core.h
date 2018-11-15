@@ -1,6 +1,6 @@
 #pragma once
 
-//Handles dll export/import based on definitions.
+// Handles dll export/import based on definitions.
 #ifdef ZC_PLATFORM_WINDOWS
 	#ifdef ZC_BUILD_DLL
 		#define ZACHERNO_API __declspec(dllexport)

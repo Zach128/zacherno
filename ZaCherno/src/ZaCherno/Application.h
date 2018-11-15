@@ -9,13 +9,13 @@ namespace ZaCherno {
 
 	public:
 		Application();
-		virtual ~Application();
+		virtual ~Application();	// To be overriden by deriving classes so as to prevent memory leaks
 
 		void Run();
 
 	};
 
-	//Must be defined in client
-	Application * CreateApplication();
+	// Must be defined in client
+	Application* CreateApplication();
 
 }

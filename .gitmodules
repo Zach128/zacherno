@@ -1,0 +1,3 @@
+[submodule "ZaCherno/vendor/spdlog"]
+	path = ZaCherno/vendor/spdlog
+	url = https://github.com/gabime/spdlog

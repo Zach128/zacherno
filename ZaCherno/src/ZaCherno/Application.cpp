@@ -3,16 +3,16 @@
 namespace ZaCherno
 {
 
-Application::Application()	//Constructor
+Application::Application()	// Constructor
 {
 }
 
 
-Application::~Application()	//Destructor
+Application::~Application()	// Destructor
 {
 }
 
-void Application::Run()		//The Applications 'main' function
+void Application::Run()		// The Applications 'main' function
 {
 	while (true);
 }
