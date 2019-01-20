@@ -30,6 +30,7 @@
     <ClInclude Include="src\ZaCherno\Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\zcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ZaCherno\Application.cpp">
@@ -38,5 +39,6 @@
     <ClCompile Include="src\ZaCherno\Log.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\zcpch.cpp" />
   </ItemGroup>
 </Project>
