@@ -10,6 +10,3 @@
 #else
 	#error zaCherno only supports 64-bit Windows.
 #endif
-
-// Returns the value of 1 left-shifted by x number of bits
-#define BIT(x) (1 << x)
