@@ -18,6 +18,9 @@ project "ZaCherno"
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "zcpch.h"
+	pchsource "ZaCherno/src/zcpch.cpp"
+
 	files
 	{
 		"%{prj.name}/src/**.h",

@@ -34,6 +34,7 @@
     <ClInclude Include="src\ZaCherno\Log.h">
       <Filter>ZaCherno</Filter>
     </ClInclude>
+    <ClInclude Include="src\zcpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\ZaCherno\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\ZaCherno\Log.cpp">
       <Filter>ZaCherno</Filter>
     </ClCompile>
+    <ClCompile Include="src\zcpch.cpp" />
   </ItemGroup>
 </Project>

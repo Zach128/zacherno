@@ -1,3 +1,4 @@
+#include "zcpch.h"
 #include "Application.h"
 
 #include "ZaCherno/Events/ApplicationEvent.h"

@@ -2,9 +2,6 @@
 
 #include "Event.h"
 
-#include <iostream>
-#include <sstream>
-
 namespace ZaCherno
 {
 
