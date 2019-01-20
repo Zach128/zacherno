@@ -4,6 +4,9 @@
     <Filter Include="ZaCherno">
       <UniqueIdentifier>{9F128659-8BDF-E064-B4F8-CE0CA02416F3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ZaCherno\Events">
+      <UniqueIdentifier>{A3B516D0-0F41-8494-1852-0789845CE094}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\ZaCherno.h" />
@@ -15,6 +18,18 @@
     </ClInclude>
     <ClInclude Include="src\ZaCherno\EntryPoint.h">
       <Filter>ZaCherno</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZaCherno\Events\ApplicationEvent.h">
+      <Filter>ZaCherno\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZaCherno\Events\Event.h">
+      <Filter>ZaCherno\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZaCherno\Events\KeyEvent.h">
+      <Filter>ZaCherno\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ZaCherno\Events\MouseEvent.h">
+      <Filter>ZaCherno\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\ZaCherno\Log.h">
       <Filter>ZaCherno</Filter>

@@ -3,6 +3,7 @@
 #include <memory.h>
 #include "Core.h"
 #include "spdlog/spdlog.h"
+#include "spdlog/fmt/ostr.h"	// Allows us to log custom types
 
 namespace ZaCherno
 {

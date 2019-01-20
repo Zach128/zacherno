@@ -26,6 +26,7 @@ project "ZaCherno"
 
 	includedirs
 	{
+		"%{prj.name}/src",
 		"ZaCherno/vendor/spdlog/include"
 	}
 
