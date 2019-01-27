@@ -10,6 +10,12 @@ workspace "ZaCherno"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+--Include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "ZaCherno/vendor/GLFW/include"
+
+include "ZaCherno/vendor/GLFW"
+
 project "ZaCherno"
 	location "ZaCherno"
 	kind "SharedLib"
@@ -30,7 +36,14 @@ project "ZaCherno"
 	includedirs
 	{
 		"%{prj.name}/src",
-		"ZaCherno/vendor/spdlog/include"
+		"ZaCherno/vendor/spdlog/include",
+		"%{IncludeDir.GLFW}"
+	}
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
 	}
 
 	filter "system:windows"
@@ -59,7 +72,7 @@ project "ZaCherno"
 
 		filter "configurations:Dist"
 			defines "ZC_DIST"
-			optimize "Off"
+			optimize "On"
 
 project "Sandbox"
 	location "Sandbox"

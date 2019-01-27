@@ -1,5 +1,6 @@
 #pragma once
 
+#include "zcpch.h"
 #include "ZaCherno/Core.h"
 
 namespace ZaCherno
