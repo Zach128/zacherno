@@ -1,3 +1,6 @@
 [submodule "ZaCherno/vendor/spdlog"]
 	path = ZaCherno/vendor/spdlog
 	url = https://github.com/gabime/spdlog
+[submodule "ZaCherno/vendor/GLFW"]
+	path = ZaCherno/vendor/GLFW
+	url = https://github.com/glfw/glfw

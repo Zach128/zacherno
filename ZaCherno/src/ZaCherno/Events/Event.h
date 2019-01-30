@@ -1,5 +1,6 @@
 #pragma once
 
+#include "zcpch.h"
 #include "ZaCherno/Core.h"
 
 namespace ZaCherno
@@ -79,7 +80,7 @@ namespace ZaCherno
 		bool Dispatch(EventFn<T> func)
 		{
 			// If the type of the given func matches the type of the Event that you're trying to dispatch,
-			// call the function and mark the event as handles
+			// call the function and mark the event as handled
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
 				m_Event.m_Handled = func(*(T*)&m_Event);
