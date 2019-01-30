@@ -34,6 +34,7 @@ namespace ZaCherno
 		{
 			std::stringstream ss;
 			ss << "KeyPressedEvent: " << m_KeyCode << " (" << m_RepeatCount << " repeats)";
+			return ss.str();
 		}
 
 		EVENT_CLASS_TYPE(KeyPressed)
@@ -45,15 +46,14 @@ namespace ZaCherno
 	{
 
 	public:
-		KeyReleasedEvent(int keycode, int repeatCount)
-			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
-
-		inline int GetRepeatCount() const { return m_RepeatCount; }
+		KeyReleasedEvent(int keycode)
+			: KeyEvent(keycode) {}
 
 		std::string ToString() const override
 		{
 			std::stringstream ss;
-			ss << "KeyReleasedEvent: " << m_KeyCode << " (" << m_RepeatCount << " repeats)";
+			ss << "KeyReleasedEvent: " << m_KeyCode;
+			return ss.str();
 		}
 
 		EVENT_CLASS_TYPE(KeyReleased)
