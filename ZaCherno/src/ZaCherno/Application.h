@@ -1,7 +1,10 @@
 #pragma once
 
 #include "Core.h"
-#include "Events/Event.h"
+
+#include "Window.h"
+#include "ZaCherno/LayerStack.h"
+#include "ZaCherno/Events/Event.h"
 #include "ZaCherno/Events/ApplicationEvent.h"
 
 #include "Window.h"
@@ -18,11 +21,15 @@ namespace ZaCherno {
 		void Run();
 		
 		void OnEvent(Event& e);
+
+		void PushLayer(Layer* layer);
+		void PushOverlay(Layer* overlay);
 	private:
 		bool OnWindowClosed(WindowCloseEvent& e);
 		
 		std::unique_ptr<Window> m_Window;
 		bool m_Running = true;
+		LayerStack m_LayerStack;
 	};
 
 	// Must be defined in client
