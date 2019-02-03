@@ -5,8 +5,8 @@
 #include<stdio.h>
 
 // Includes all components of the zaCherno engine
-#include "ZaCherno/Core.h"
 #include "ZaCherno/Application.h"
+#include "ZaCherno/Layer.h"
 #include "ZaCherno/Log.h"
 
 //**********ENTRY POINT************
