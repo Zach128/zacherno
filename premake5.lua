@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 --Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "ZaCherno/vendor/GLFW/include"
+IncludeDir["Glad"] = "ZaCherno/vendor/Glad/include"
 
 include "ZaCherno/vendor/GLFW"
+include "ZaCherno/vendor/Glad"
 
 project "ZaCherno"
 	location "ZaCherno"
@@ -37,12 +39,14 @@ project "ZaCherno"
 	{
 		"%{prj.name}/src",
 		"ZaCherno/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib"
 	}
 
@@ -54,7 +58,8 @@ project "ZaCherno"
 		defines
 		{
 			"ZC_PLATFORM_WINDOWS",
-			"ZC_BUILD_DLL"
+			"ZC_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
