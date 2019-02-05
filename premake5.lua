@@ -13,8 +13,13 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 --Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "ZaCherno/vendor/GLFW/include"
+IncludeDir["GLFW"] = "ZaCherno/vendor/GLFW/include"
+IncludeDir["Glad"] = "ZaCherno/vendor/Glad/include"
+IncludeDir["ImGui"]= "ZaCherno/vendor/imgui/include"
 
 include "ZaCherno/vendor/GLFW"
+include "ZaCherno/vendor/Glad"
+include "ZaCherno/vendor/imgui"
 
 project "ZaCherno"
 	location "ZaCherno"
@@ -30,19 +35,24 @@ project "ZaCherno"
 	files
 	{
 		"%{prj.name}/src/**.h",
-		"%{prj.name}/src/**.cpp"
+		"%{prj.name}/src/**.cpp",
+		"premake5.lua",
 	}
 
 	includedirs
 	{
 		"%{prj.name}/src",
 		"ZaCherno/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}",
+		"%{IncludeDir.ImGui}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
+		"ImGui",
 		"opengl32.lib"
 	}
 
