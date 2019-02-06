@@ -9,6 +9,8 @@
 #include "ZaCherno/Layer.h"
 #include "ZaCherno/Log.h"
 
+#include "ZaCherno/ImGui/ImGuiLayer.h"
+
 //**********ENTRY POINT************
 #include "ZaCherno/EntryPoint.h"
 //*********************************

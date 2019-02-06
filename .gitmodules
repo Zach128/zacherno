@@ -5,7 +5,5 @@
 	path = ZaCherno/vendor/GLFW
 	url = https://github.com/glfw/glfw
 [submodule "ZaCherno/vendor/imgui"]
-
 	path = ZaCherno/vendor/imgui
-
 	url = https://github.com/Zach128/imgui

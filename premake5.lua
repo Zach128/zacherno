@@ -13,9 +13,8 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 --Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "ZaCherno/vendor/GLFW/include"
-IncludeDir["GLFW"] = "ZaCherno/vendor/GLFW/include"
 IncludeDir["Glad"] = "ZaCherno/vendor/Glad/include"
-IncludeDir["ImGui"]= "ZaCherno/vendor/imgui/include"
+IncludeDir["ImGui"]= "ZaCherno/vendor/imgui"
 
 include "ZaCherno/vendor/GLFW"
 include "ZaCherno/vendor/Glad"
@@ -64,7 +63,8 @@ project "ZaCherno"
 		defines
 		{
 			"ZC_PLATFORM_WINDOWS",
-			"ZC_BUILD_DLL"
+			"ZC_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 
 		postbuildcommands
